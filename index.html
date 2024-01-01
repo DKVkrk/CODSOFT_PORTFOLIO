@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devesh Kumar Singh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">Devesh Kumar Singh</div>
+    <div class="menu-toggle">&#9776;</div>
+    <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about" class="section">
+    <div class="container">
+        <div class="about-content">
+            <h2>Hello,It's Me</h2>
+            <h3>I am <span class="text"></span></h3>
+            <p>I am a coding enthusiast with a passion for learning <br>new skills and technologies</br>.</p>
+        </div>
+        <div class = "home-sci">
+            
+            <a href="#" target="_blank" onclick="redirectToPage();"><i class='bx bxl-linkedin-square' ></i></a>
+
+           
+
+            <a href="#" target="_blank" onclick="redirectToPage1();"><i class='bx bxl-instagram' ></i></a>
+
+            <a href="#" target="_blank" onclick="redirectToPage2();"><i class='bx bxl-github'></i></a>
+
+
+                         
+        </div>
+        <a href="#" class="btn-box">More About Me</a>
+        <div class="image">
+            <img src="images/dks2.jpg" width="400" height="
+            600" alt="Profile Image">
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container1">
+        <h2>Skills</h2>
+        <div class="skills-content">
+            <img src="images/html.jpeg" width="80" height="80" alt="HTML">
+            <img src="images/css.jpeg" width="80" height="80" alt="CSS">
+            <img src="images/javascript.png" width="80" height="80" alt="JavaScript">
+            <img src="images/react js.jpeg" width="80" height="80" alt="React JS">
+            <img src="images/java.png" width="80" height="80" alt="Java">
+            <img src="images/python-.jpg" width="80" height="80" alt="Python">
+            <img src="images/xml.png" width="80" height="80" alt="XML">
+        </div>
+        <div class="abtskills">
+            <h5>I am continuously learning various skills. Currently experienced in HTML, CSS, JavaScript, Java, Python, XML, React JS.</h5>
+        </div>
+        <div class="pro">
+            <h6>PROFICIENCY</h6>
+            <ul>
+                <li>
+                    <label for="HTML">HTML</label>
+                    <progress max="400" value="350"></progress>
+                </li>
+                <li>
+                    <label for="CSS">CSS</label>
+                    <progress max="400" value="350"></progress>
+                </li>
+                <li>
+                    <label for="JAVASCRIPT">JavaScript</label>
+                    <progress max="400" value="350"></progress>
+                </li>
+                <li>
+                    <label for="XML">XML</label>
+                    <progress max="400" value="350"></progress>
+                </li>
+                <li>
+                    <label for="PYTHON">Python</label>
+                    <progress max="400" value="350"></progress>
+                </li>
+                <li>
+                    <label for="JAVA">Java</label>
+                    <progress max="400" value="350"></progress>
+                </li>
+                <li>
+                    <label for="REACT JS">React JS</label>
+                    <progress max="400" value="350"></progress>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h8>Projects</h8>
+    <div class="container3">
+        
+        <div class="projects-content">
+            <h7> Air Line Reservation System <br>Technology Used - JAVA UI(SWING USED FOR FRONTEND)</br>, MySQL(FOR BACKEND) </h7>
+            
+            
+        </div>
+        <div class = "pr">
+            <h10>Harmful Gas Detector <br>Technology Used - Arudino , Bluetooth Module hc05(HardWare) ,Java , Xml </br> </h10>
+        </div>
+    </div>
+</section>
+
+<section id="resume" class="section">
+    <div class="container4">
+        <h9>Resume</h9>
+        <div class="resume-content">
+            <a href="file:///C:/Users/DEVESH/OneDrive/Desktop/Resume%20devesh.pdf" target="_blank" onclick="redirectToPage3"><i class='bx bxs-group'></i></a>
+        
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container5">
+        <h7>Contact</h7>
+        <div class="contact-content">
+           <a href="#" ><i class='bx bx-phone' ></i></a> <p class="phone">Phone: +91 9157451427</p>
+           <a href="#"><i class='bx bxl-gmail'></i></a> <p class="email">Email: dk2991999@gmail.com</p>
+            <!-- Add your contact form or information -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Devesh Kumar Singh. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    
+
+    function redirectToPage() {
+        // Replace 'destination.html' with the actual URL you want to redirect to
+        window.location.href = 'https://www.linkedin.com/in/devesh-kumar-187292207/';
+    }
+    function redirectToPage1(){
+        window.location.href = "https://www.instagram.com/devesh_singh299/"
+    }
+    function redirectToPage2(){
+        window.location.href = "https://github.com/"
+    }
+    function redirectToPage3(){
+        window.location.href = "file:///C:/Users/DEVESH/OneDrive/Desktop/Resume%20devesh.pdf"
+    }
+
+
+
+
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', function () {
+            navList.classList.toggle('show');
+        });
+
+        // Close the menu when a menu item is clicked
+        navList.addEventListener('click', function () {
+            navList.classList.remove('show');
+        });
+
+        // Smooth scrolling to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+
+
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>

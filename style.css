@@ -1,0 +1,556 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #232526, #414345);
+    color: #fff;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: linear-gradient(to right, #333, #111);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    color: white;
+  
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  
+}
+.nav-list a:hover{
+    color: #0ef;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 0;
+}
+
+/* About Section Styles */
+#about {
+    background: linear-gradient(to right, #292e31, #536976);
+    color: white;
+}
+
+.about-content {
+    max-width: 600px;
+    
+}
+
+/* Skills Section Styles */
+#skills {
+    background: linear-gradient(to right, #474747, #232323);
+    color: white;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+}
+
+.abtskills {
+    margin: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #493240, #292e31);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Projects Section Styles */
+#projects {
+    background: linear-gradient(to right, #1d1d1d, #333333);
+    color: white;
+}
+
+.projects-content {
+    
+        margin: 30px;
+        height: 150px;
+        width: 450px;
+        background-color: blueviolet;
+        overflow-wrap: break-word;
+        border-radius: 12%;
+        text-align: center;
+        text-shadow: 0ch;
+    
+    
+}
+.pr{
+    margin: 30px;
+    height: 150px;
+    width: 450px;
+    background-color: blueviolet;
+    overflow-wrap: break-word;
+    border-radius: 12%;
+    text-align: center;
+    text-shadow: 0ch;
+
+}
+
+/* Resume Section Styles */
+#resume {
+    background: linear-gradient(to right, #34596c, #223843);
+    color: white;
+}
+
+.resume-content {
+    /* Add your resume content styles here */
+}
+
+/* Contact Section Styles */
+#contact {
+    background: linear-gradient(to right, #005c97, #363795);
+    color: white;
+}
+
+.contact-content {
+    /* Add your contact form or information styles here */
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #161616, #1f1f1f);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        z-index: 999;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        text-align: center;
+    }
+}
+.image{
+    
+  margin-left: 844px;
+  margin-top: -322px;
+  border-radius: 1000%;
+  
+}
+
+.about-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.about-content h3 span{
+    color: #0ef;
+}
+.about-content h2{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.about-content p{
+    font-size: 22px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 38px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #281b28;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #041b20;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 640;
+
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}  
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}     
+@keyframes slideBottom{
+    0%{
+        transform: translateZ(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateZ(0px);
+        opacity: 1;
+    }
+}
+h6{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+h6:hover{
+    color: #0ef;
+}
+h5:hover{
+    color:aqua
+}
+.contact-content a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 38px 15px 30px 0;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    
+    
+}
+.contact-content a:hover{
+    background: #0ef;
+    color: #281b28;
+    box-shadow: 0 0 20px #0ef;
+
+}
+.phone{
+    margin-top: 4px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+h21{
+    text-align: center;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+h21:hover{
+    color: #0ef;
+}
+
+h8{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+    font-weight: bolder;
+    margin-top: 4px;
+
+    
+}
+
+h8:hover{
+    color: #0ef;
+}
+h9{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+    font-weight: bolder;
+
+   
+}
+
+h9:hover{
+    color: #0ef;
+}
+.resume-content a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 38px 15px 30px 0;
+}
+.resume-content a:hover{
+    background: #0ef;
+    color: #281b28;
+    box-shadow: 0 0 20px #0ef;
+}
+h7{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+
+}
+h7:hover{
+    color: #0ef;
+}
+.container3{
+    
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+    
+}
+h10{
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+
+
+}
+h10:hover{
+    color: #0ef;
+
+}
+
+
+.navbar {
+    background: linear-gradient(to right, #333, #111);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Projects Section Styles */
+#projects {
+    background: linear-gradient(to right, #1d1d1d, #333333);
+    color: white;
+    text-align: center; /* Center text for better mobile display */
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column; /* Display projects in a column on smaller screens */
+    align-items: center;
+}
+
+.projects-content,
+.pr {
+    margin: 30px;
+    width: 100%; /* Full width for smaller screens */
+    background-color: blueviolet;
+    overflow-wrap: break-word;
+    border-radius: 12%;
+    text-align: center;
+}
+
+/* Additional styles for better mobile display */
+.projects-content h7,
+.pr h10 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        z-index: 999;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-list a {
+        padding: 15px;
+        display: block;
+    }
+}
